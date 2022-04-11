@@ -1,0 +1,15 @@
+server:
+  port: 19001
+
+spring:
+  application:
+    name: cloud-discovery-service
+  security:
+    user:
+      name: aibees1129
+      password: qkr12wns3!
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
