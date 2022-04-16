@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  cloud-discovery-service:
+    image: cloud-discovery:1.0
+    hostname: cloud-discovery-service
+    networks:
+      msa:
+        ipv4_address: 172.18.1.11
+      aibees:
+        ipv4_address: 172.18.0.11
+    ports:
+      - "19001:19001"
+    expose:
+      - "19001"
+
+networks:
+  aibees:
+    external: true
+  msa:
+    external: true
